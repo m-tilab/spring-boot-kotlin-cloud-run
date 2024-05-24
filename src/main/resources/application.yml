@@ -1,1 +1,17 @@
-spring.application.name=spring-boot-kotlin-cloud-run
+spring.application.name: spring-boot-kotlin-cloud-run
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql:///postgres
+    username: postgres
+    password: postgres
+  cloud:
+    gcp:
+      project-id: persian-java-talk
+      sql:
+        instance-connection-name: persian-java-talk:us-central1:postgres-cloud-run
+        database-name: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
