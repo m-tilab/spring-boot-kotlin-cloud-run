@@ -1,13 +1,10 @@
 spring.application.name: spring-boot-kotlin-cloud-run
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://34.121.148.219/postgres
     username: postgres
     password: postgres
   cloud:
     gcp:
-      project-id: persian-java-talk
       sql:
         instance-connection-name: persian-java-talk:us-central1:postgres-cloud-run
         database-name: postgres
